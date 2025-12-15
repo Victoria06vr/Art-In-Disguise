@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home page</title>
+  <link rel="stylesheet" href="location.css" />
+</head>
+
+<body>
+
+<header class="navbar">
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="images/BigBlackLogo.png" alt="Art in Disguise logo">
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <ul class="nav-links">
+      <li data-key="home">Home</li>
+      <li data-key="statues">Statues</li>
+      <li data-key="location">Location</li>
+      <li data-key="map">Map</li>
+      <li data-key="list">List</li>
+    </ul>
+
+    <!-- LANGUAGE DROPDOWN (now inside nav) -->
+    <div class="lang-dropdown">
+      <button class="lang-btn" id="langBtn">
+        <span id="currentLang">EN</span>
+        <span class="arrow">▾</span>
+      </button>
+
+      <ul class="lang-menu" id="langMenu"></ul>
+    </div>
+  </nav>
+
+<button class="burger" id="burgerBtn">&#9776;</button> <!-- Hamburger icon -->
+<button class="close-menu" id="closeMenu">&times;</button>
+</header>
+
+<!-- TITLE BELOW NAV -->
+<section class="page-title">
+  <h1>Explore the history of Budapest</h1>
+</section>
+
+<h2 class="info-heading">Choosing The Right Spot</h2>
+
+<div class="section-one">
+ <p class="info">Mihály Kolodko places his mini-statues in locations that add meaning, humor, or a small story to the sculpture. He looks for spots where the surroundings can enhance the character—whether through a symbolic link, a cultural reference, or a playful twist.</p>
+<img src="">
+<img src="">
+<p>Kolodko places his mini-statues in everyday public spaces like railings, bridges, and benches, turning discovery into part of the experience. The figures often interact with their surroundings, making them feel naturally connected to the city. Their locations reflect local history or Hungarian culture, encouraging people to notice overlooked details and view familiar places with fresh curiosity.</p>
+</div>
+
+<h1 class="info-heading">List of values</h1>
+
+<footer class="footer">
+  <div class="footer-left">
+    <div class="footer-logo">
+      <img class="footer-logo" src="images/BigWhiteLogo.png" alt="Art in Disguise logo">
+      <div class="social-media">
+        <img src="images/insta.png" alt="instagram logo">
+        <img src="images/facebook.png" alt="facebook logo">
+        <img src="images/tiktok.png" alt="tiktok logo">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-right">
+    <h3>Pages</h3>
+    <p>Home</p>
+    <p>Statues</p>
+    <p>Location</p>
+    <p>Map</p>
+    <p>List</p>
+  </div>
+</footer>
+
+
+<script src="location.js"></script>
+
+</body>
+</html>
