@@ -54,16 +54,3 @@ langMenu.addEventListener("click", (e) => {
     langDropdown.classList.remove("open");
   }
 });
-
-const burgerBtn = document.getElementById("burgerBtn");
-const closeBtn = document.getElementById("closeMenu");
-const nav = document.querySelector(".nav");
-
-burgerBtn.addEventListener("click", () => {
-  nav.classList.add("active");
-});
-
-closeBtn.addEventListener("click", () => {
-  nav.classList.remove("active");
-});
-
