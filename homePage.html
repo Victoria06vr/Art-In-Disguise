@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home page</title>
+  <link rel="stylesheet" href="homePage.css" />
+</head>
+
+<body>
+
+<header class="navbar">
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="images/BigBlackLogo.png" alt="Art in Disguise logo">
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <ul class="nav-links">
+      <li data-i18n="home">Home</li>
+      <li data-i18n="statues"><a href="statues.html" style="color: inherit; text-decoration: none;">Statues</a></li>
+      <li data-i18n="location">Location</li>
+      <li data-i18n="map">Map</li>
+      <li data-i18n="list">List</li>
+    </ul>
+
+    <!-- LANGUAGE DROPDOWN (now inside nav) -->
+    <div class="lang-dropdown">
+      <button class="lang-btn" id="langBtn">
+        <span id="currentLang">EN</span>
+        <span class="arrow">▾</span>
+      </button>
+
+      <ul class="lang-menu" id="langMenu"></ul>
+    </div>
+  </nav>
+<button class="burger" id="burgerBtn">&#9776;</button>
+
+</header>
+
+<main class="home">
+
+  <!-- HERO SECTION -->
+  <section class="hero-home">
+    <div class="hero-bg"></div>
+
+    <div class="hero-text">
+      <h1>
+        <span data-i18n="hero_small">Small Art</span>
+        <span data-i18n="hero_big">Big Wonders</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section class="about-home">
+    <div class="about-text">
+      <h2 data-i18n="about_title">About us</h2>
+      <p data-i18n="about_p1">
+        Tiny statues hide in plain sight, tucked into corners, perched on ledges,
+        or peeking out from the bustle of daily life—waiting for the curious
+        discover them. Each one carries a story, a touch of playfulness, or a spark
+        of creativity, and we’re here to bring those stories to light.
+      </p>
+      <p data-i18n="about_p2">
+        By mapping these miniature wonders and sharing their tales, we turn
+        ordinary walks into small adventures, inviting you to slow down and
+        notice the details often overlooked.
+      </p>
+      <p data-i18n="about_p3">
+        Our mission is to celebrate curiosity, spark joy, and transform everyday
+        moments into opportunities for wonder.
+      </p>
+    </div>
+
+    <div class="about-images">
+      <img src="images/aboutUs1.png" alt="about us image">
+      <img src="images/aboutUs2.png" alt="about us image2">
+      <img src="images/aboutUs3.png" alt="about us image3">
+    </div>
+  </section>
+
+  <!-- STATUES PREVIEW -->
+  <section class="statues-home">
+    <div class="statues-header">
+      <h2 data-i18n="statues">Statues</h2>
+      <a href="statues.html" data-i18n="see_more">See more →</a>
+    </div>
+
+    <div class="statues-grid">
+      <div class="statue-card">
+        <img src="images/statue1.png">
+        <p data-i18n="dead_squirrel">Dead Squirrel</p>
+      </div>
+      <div class="statue-card dracula">
+        <img src="images/statue4.png">
+        <p data-i18n="dracula">Dracula</p>
+      </div>
+      <div class="statue-card hanna">
+        <img src="images/statue3.png">
+        <p data-i18n="hanna_szenes">Hanna Szenes</p>
+      </div>
+      <div class="statue-card car">
+        <img src="images/statue2.png">
+        <p data-i18n="roadster">14-Carat Roadster</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE -->
+  <section class="explore-home">
+    <h2 class="explore-title" data-i18n="explore">EXPLORE</h2>
+
+    <div class="explore-grid">
+      <div class="explore-item build">
+        <img src="images/explore1.png">
+        <p data-i18n="explore_locations">Learn more about the statues locations</p>
+      </div>
+      <div class="explore-item map">
+        <img src="images/explore2.png">
+        <p data-i18n="explore_map">Check out the map and find the statues</p>
+      </div>
+      <div class="explore-item list">
+        <img src="images/explore3.png">
+        <p data-i18n="explore_list">Complete the checklist and post a photo</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="footer-left">
+      <img class="footer-logo" src="images/BigWhiteLogo.png" alt="Art in Disguise logo">
+
+
+      <div class="social-media">
+        <img src="images/insta.png" alt="instagram logo">
+        <img src="images/facebook.png" alt="facebook logo">
+        <img src="images/tiktok.png" alt="tiktok logo">
+  </div>
+        </div>
+
+  <div class="footer-right">
+    <h3 data-i18n="pages">Pages</h3>
+    <p data-i18n="home">Home</p>
+    <p><a href="statues.html" style="color: inherit; text-decoration: none;" data-i18n="statues">Statues</a></p>
+    <p><a href="location.html" style="color: inherit; text-decoration: none;" data-i18n="location">Location</a></p>
+    <p data-i18n="map">Map</p>
+    <p data-i18n="list">List</p>
+  </div>
+</footer>
+
+
+<script src="homePage.js"></script>
+
+</body>
+</html>

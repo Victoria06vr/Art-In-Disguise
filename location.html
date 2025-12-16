@@ -18,11 +18,11 @@
   <!-- NAVIGATION -->
   <nav class="nav">
     <ul class="nav-links">
-      <li data-key="home">Home</li>
-      <li data-key="statues"><a href="statues.html" style="color: inherit; text-decoration: none;">Statues</a></li>
-      <li data-key="location">Location</li>
-      <li data-key="map">Map</li>
-      <li data-key="list">List</li>
+      <li data-i18n="home">Home</li>
+      <li data-i18n="statues"><a href="statues.html" style="color: inherit; text-decoration: none;">Statues</a></li>
+      <li data-i18n="location">Location</li>
+      <li data-i18n="map">Map</li>
+      <li data-i18n="list">List</li>
     </ul>
 
     <!-- LANGUAGE DROPDOWN (now inside nav) -->
@@ -44,7 +44,7 @@
 
   <!-- HERO TITLE -->
   <section class="hero">
-    <h1>Budapest Through<br>Its Places</h1>
+    <h1 data-i18n="location_hero_title">Budapest Through<br>Its Places</h1>
   </section>
 
   <!-- WHO CREATED THEM -->
@@ -52,8 +52,8 @@
     <div class="creator-grid">
 
       <div class="creator-text">
-        <h2>Choosing the Right Spot</h2>
-        <p>
+        <h2 data-i18n="location_intro_title">Choosing the Right Spot</h2>
+        <p data-i18n="location_intro_text">
         Mihály Kolodko places his mini-statues in locations that add meaning, humor,
         or a small story to the sculpture. He looks for spots where the surroundings 
         can enhance the character—whether through a symbolic link, 
@@ -74,7 +74,7 @@
       </div>
 
      <div class="creator-text">
-        <p>
+        <p data-i18n="location_intro_text_2">
         He places his mini-statues in everyday public spots like railings, bridges, 
         and benches—areas people often overlook. This makes discovery part of the experience.
         Many of the figures “interact” with their surroundings, 
@@ -93,10 +93,12 @@
 
     <div class="statues-header">
       <div class="statues-title">
-        <h2>List of locations</h2>
+        <h2 data-i18n="location_list_title">List of locations</h2>
         <div class="search-filter">
-        <input type="text" placeholder="Look for location">
-        <button class="filter-btn">⚲</button>
+        <input type="text"
+        data-i18n-placeholder="location_search"
+        placeholder="Look for location">
+        <button class="filter-btn" data-i18n="filter_btn">⚲</button>
       </div>
     </div>
  </div>
@@ -104,40 +106,41 @@
     <div class="statues-grid">
 
       <div class="statue-card">
-        <img src="images/castle.png">
+        <a href="specificLocation.html"><img src="images/castle.png"></a>
         <div class="card-footer">
-          <span>Vajdahunyad Castle  </span>
-          <button>Info</button>
+          <span data-i18n="vajdahunyad_castle">Vajdahunyad Castle  </span>
+          <a href="specificLocation.html"> <button class="infoButton">Info</button></a>
+         
         </div>
       </div>
 
       <div class="statue-card">
         <img src="images/hannaPark.png">
         <div class="card-footer">
-          <span>Szenes Hanna park</span>
-          <button>Info</button>
+          <span data-i18n="szenes_park">Szenes Hanna park</span>
+          <button data-i18n="info">Info</button>
         </div>
       </div>
 
       <div class="statue-card">
         <img src="images/PestiBuilding.png">
         <div class="card-footer">
-          <span>Pesti Magyar Színház.</span>
-          <button>Info</button>
+          <span data-i18n="pesti_theatre">Pesti Magyar Színház.</span>
+          <button data-i18n="info">Info</button>
         </div>
       </div>
 
       <div class="statue-card">
         <img src="images/SquirePark.png">
         <div class="card-footer">
-          <span>Bethlen Gábor square</span>
-          <button>Info</button>
+          <span  data-i18n="bethlen_square">Bethlen Gábor square</span>
+          <button data-i18n="info">Info</button>
         </div>
       </div>
 
     </div>
 
-    <a href="#" class="show-more">show more</a>
+    <a href="#" class="show-more" data-i18n="show_more">show more</a>
 
   </section>
 
@@ -157,12 +160,12 @@
         </div>
 
   <div class="footer-right">
-    <h3>Pages</h3>
-    <p>Home</p>
-    <p><a href="statues.html" style="color: inherit; text-decoration: none;">Statues</a></p>
-    <p><a href="location.html" style="color: inherit; text-decoration: none;">Location</a></p>
-    <p>Map</p>
-    <p>List</p>
+    <h3  data-i18n="pages">Pages</h3>
+    <p data-i18n="home">Home</p>
+    <p><a href="statues.html" style="color: inherit; text-decoration: none;" data-i18n="statues">Statues</a></p>
+    <p><a href="location.html" style="color: inherit; text-decoration: none;" data-i18n="location">Location</a></p>
+    <p data-i18n="map">Map</p>
+    <p data-i18n="list">List</p>
   </div>
 </footer>
 

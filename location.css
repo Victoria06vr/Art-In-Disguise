@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  font-family: serif;
+  font-family: "Noto Sans", sans-serif;
   background-color: #FCF7F0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .navbar {
@@ -144,6 +146,9 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 
+.statues-title{
+  font-family: Butler;
+}
 
 .info-heading {
   font-size: 30px;
@@ -151,6 +156,10 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   padding: 60px;
   margin-top: 40px;
   font-family: Butler;
+}
+
+.infoButton {
+  cursor: pointer;
 }
 
 .footer {
@@ -422,12 +431,106 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     padding: 15px 20px;
   }
  
-
-  .page-title {
-    font-size: 20px;
-    padding: 30px;
-    margin-top: 30px;
+  .burger {
+    display: block;
+    cursor: pointer;
   }
+
+  .creator-grid,
+  .creator-grid.reverse-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 0;
+  }
+
+  /* Reset image positioning */
+  .creator-images {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .img-large,
+  .img-small {
+    position: static;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    padding: 50px;
+    line-height: 1.2;
+  }
+
+    .statues-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .card-footer {
+    font-size: 18px;
+  }
+.creator-grid,
+  .creator-grid.reverse-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* Text blocks */
+  .creator-text {
+    order: 1;
+  }
+
+  /* First image group */
+  .creator-grid:not(.reverse-grid) .creator-images {
+    order: 2;
+  }
+
+  /* Second text block */
+  .creator-grid.reverse-grid .creator-text {
+    order: 3;
+  }
+
+  /* SECOND image group — force after second text */
+  .creator-grid.reverse-grid .creator-images {
+    order: 4;
+  }
+
+  /* Reset image overlap */
+  .creator-images {
+    position: static;
+  }
+
+  .img-large,
+  .img-small {
+    position: static;
+    width: 100%;
+  }
+
+
+  .statues-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .search-filter input {
+    width: 100%;
+  }
+
+
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
 .footer {
     align-items: center;
     padding: 5px 20px;
