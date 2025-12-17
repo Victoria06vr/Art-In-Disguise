@@ -306,14 +306,12 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   margin-bottom: 40px;
 }
 
-/* Title + search next to each other */
 .statues-title {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-/* Optional: tighten search */
 .search-filter input {
   width: 200px;
 }
@@ -339,10 +337,13 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   gap: 40px;
 }
 
-.statue-card img {
-  width: 100%;
-  border-radius: 20px;
+.statue-name {
+  display: block;
 }
+.card-footer span {
+  display: block;
+}
+
 
 .card-footer {
   display: flex;
@@ -351,6 +352,11 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   margin-top: 20px;
   font-size: 25px;
   font-family: butler;
+}
+
+.statue-card img {
+  width: 100%;
+  
 }
 
 .card-footer button {
@@ -464,7 +470,7 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     line-height: 1.2;
   }
 
-    .statues-grid {
+  .statues-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -472,6 +478,7 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   .card-footer {
     font-size: 18px;
   }
+  
 .creator-grid,
   .creator-grid.reverse-grid {
     display: flex;
