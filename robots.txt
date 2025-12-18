@@ -1,0 +1,10 @@
+# robots.txt for Art In Disguise
+User-agent: *
+Disallow:
+
+# If you have a sitemap, uncomment and replace the URL below:
+# Sitemap: https://yourdomain.com/sitemap.xml
+
+# Notes:
+# - Place this file at the website root so it's accessible at https://yourdomain.com/robots.txt
+# - To block specific paths, add lines like: Disallow: /private/
